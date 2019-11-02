@@ -4,14 +4,21 @@ Trying to get Bookdown and the No Starch template to play nicely together.
 
 -   `README.md`: this file.
 -   `Makefile`: commands to rebuild things.
-    -   `make all`: try to create a PDF using Bookdown.
+    -   `make bookdown`: try to create a PDF using Bookdown.
+    -   `make nostarch`: recompile the No Starch example.
     -   `make clean`: clean up shrapnel.
     -   `make packages`: install TinyTex packages (see below).
-    -   `make nostarch`: recompile the No Starch example.
 
 -   `nostarch.cls`: No Starch's LaTeX template file.
 -   `nshyper.sty`: Another No Starch style file.
--   `nsp_logo_black_big.jpg`: the No Starch logo.
+-   `fonts/*`: fonts required by No Starch example.
+-   image files used by No Starch example
+    -   `nsp_logo_black_big.jpg`
+    -   `100euroie.png`
+    -   `100euroit.png`
+    -   `1eurogr.jpg`
+    -   `recycled.png`
+    -   `vitruvian.jpg`
 
 -   `_bookdown.yml`: configuration file used by Bookdown.
 -   `_output.yml`: another configuration file used by Bookdown.
