@@ -1,0 +1,20 @@
+--- 
+title: "The Tidynomicon"
+author: "Greg Wilson"
+bibliography: book.bib
+description: The Tidynomicon
+documentclass: nostarch
+biblio-style: plainnat
+github-repo: gvwilson/tidynomicon
+link-citations: yes
+site: bookdown::bookdown_site
+---
+
+# Introduction
+
+Years ago,
+Patrick Burns wrote *[The R Inferno][r-inferno]*,
+a guide to R for those who think they are in hell.
+Upon first encountering the language after two decades of using Python,
+I thought Burns was an optimist—after all,
+hell has rules.
