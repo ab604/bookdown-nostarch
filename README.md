@@ -24,7 +24,9 @@ Trying to get Bookdown and the No Starch template to play nicely together.
 -   `_output.yml`: another configuration file used by Bookdown.
 -   `preamble.tex`: Bookdown's LaTeX preamble file.
 -   `index.Rmd`: Bookdown source file.
+-   `tidyverse.Rmd`: Bookdown source file.
 -   `book.bib`: bibliography source file (contains one entry because Bookdown expects it).
+-   `common.R`: shared R definitions for RMarkdown files.
 
 -   `packages.txt`: list of packages needed by No Starch example file.
 

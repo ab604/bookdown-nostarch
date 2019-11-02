@@ -7,3 +7,4 @@ delete_merged_file: false
 new_session: true
 rmd_files:
   - index.Rmd
+  - tidyverse.Rmd
