@@ -1,0 +1,105 @@
+\documentclass[cfonts]{nostarch}
+
+% ===== PACKAGES =====
+\usepackage{lipsum}
+\usepackage{natbib}
+\usepackage{nshyper}
+
+% ---------- For Editing ----------
+\usepackage{minitoc} % makes chapter level ToCs
+\setcounter{minitocdepth}{3} 
+\setcounter{parttocdepth}{3}
+
+% ===== CONFIGURE =====
+% Configurations go here
+
+
+\makeindex
+
+\begin{document}
+
+
+% ===== COMMANDS =====
+% Commands go here
+
+    
+    
+%----------------------------
+% ---------- FRONT ----------
+%----------------------------
+\frontmatter
+
+\author{A.~U.~Thor, C.~O.~R.~Respondent and W.~R.~Iter}
+
+\title{Pellentesque habitant morbi}
+
+\subtitle{Cum sociis natoque penatibus}
+
+\nostarchlogo{nsp_logo_black_big.jpg}
+
+\makehalftitle
+
+\maketitle
+
+
+\begin{copyrightpage}
+  \textbf{\sffamily\MakeUppercase{Pellentesque habitant morbi.}}
+  Copyright \textcopyright{} 2008 by A.~U.~Thor, C.~O.~R.~Respondent
+  and W.~R.~Iter
+\end{copyrightpage}
+
+\begin{dedicationpage}
+Some pithy quotation
+\end{dedicationpage}
+
+\brieftableofcontents
+
+\tableofcontents
+
+\chapter*[Foreword by R.~E.~Viewer]{Foreword}
+
+\lipsum[48-50]
+
+\bigskip
+
+\begin{raggedright}
+\bfseries
+R.~E.~Viewer\index{Viewer, R. E.@\emph{Viewer, R.~E.}}\\
+New York\index{USA!states!New York}\index{New York|see{USA, states}}\\
+December 2007
+\end{raggedright}
+
+%---------------------------
+% ---------- MAIN ----------
+%---------------------------
+\mainmatter
+\part{Mi aliquam dictum}
+
+\lipsum[77-78]
+
+\chapter[Morbi ac orci]{Morbi ac orci et nisl hendrerit mollis}
+
+Fusce adipiscing justo nec ante. Nullam in enim.  Pellentesque felis
+orci, sagittis ac, malesuada et, facilisis in, ligula\index{ligula}.
+Nunc\index{nunc} non magna sit amet mi aliquam dictum\index{dictum}.
+
+%----------------------------
+%----------- BACK -----------
+%----------------------------
+\backmatter
+
+\nocite{*}
+\bibliographystyle{plainnat}
+\bibliography{book}
+
+\printindex
+
+\updatespage
+
+Visit \url{http://borisv.lk.net/latex.html} for updates, errata, and other information.
+
+\colophon
+
+The book was produced as an example of the package \texttt{nostarch}. 
+
+\end{document}
