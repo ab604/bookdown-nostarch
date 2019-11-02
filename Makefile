@@ -3,9 +3,7 @@ all :
 	Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::pdf_book')"
 
 clean :
-	rm -rf docs \
-	tidynomicon.log tidynomicon.md tidynomicon.rds tidynomicon.tex \
-	*.log *~
+	rm -rf $$(cat .gitignore)
 
 packages :
 	tlmgr install $$(cat packages.txt)
