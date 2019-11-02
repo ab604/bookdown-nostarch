@@ -1,7 +1,0 @@
-# The Tidyverse {#tidyverse}
-
-```{r setup, include=FALSE}
-source("common.R")
-```
-
-See @Wick2019.
