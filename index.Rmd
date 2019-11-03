@@ -10,6 +10,10 @@ link-citations: yes
 site: bookdown::bookdown_site
 ---
 
+\pdfstringdefDisableCommands{%
+\let\MakeUppercase\relax
+}
+
 # Introduction
 
 See @Wick2019.
