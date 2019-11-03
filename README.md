@@ -79,6 +79,29 @@ Output written on tidynomicon.pdf (4 pages).
 and according to https://texfaq.org/FAQ-casechange,
 this command should be defined in the standard LaTeX packages.
 
+## Attempts
+
+-   Adding `\usepackage{textcase}` to `preamble.tex` doesn't work.
+    (Inspired by http://joshua.smcvt.edu/latex2e/Upper-and-lower-case.html.)
+
+-   Changing `\MakeUppercase` to `\uppercase` in `nostarch.tex` and `nostarch.cls` works
+    (see https://github.com/gvwilson/bookdown-nostarch/issues/1),
+    but the publisher probably won't let me change their style files.
+
+-   It appears to be bibliography-related:
+    1.  Try to build with `make all`: fails.
+    2.  `xelatex tidynomicon` to build the generated LaTeX by hand: succeeds.
+    3.  Run `bibtex tidynomicon` to resolve citations.
+    4.  Run `xelatex tidynomicon` again: fails with the error shown below.
+
+```
+(./tidynomicon.bbl [3] [4]
+! Undefined control sequence.
+\MakeUppercase ...ppercaseUnsupportedInPdfStrings 
+                                                  
+l.1 \begin{thebibliography}{1}
+```
+
 ## Files
 
 -   `README.md`: this file.

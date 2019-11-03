@@ -6,6 +6,7 @@
 *.maf
 *.mtc
 *.mtc0
+*.out
 *.tbc
 *.toc
 *~
